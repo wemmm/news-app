@@ -1,14 +1,14 @@
-function testThatNewsHasArray(){
-  news = new News();
-  assert.isTrue(news.story.length === 0)
-}
-
-testThatNewsHasArray();
-
-// function testThatNewsShowsContent(){
+// function testThatNewsHasArray(){
 //   news = new News();
-//   news.getStory();
-//   assert.isTrue(news.story.length === 1)
+//   assert.isTrue(news.story.length === 0)
 // }
 //
-// testThatNewsShowsContent();
+// testThatNewsHasArray();
+//
+// // function testThatNewsShowsContent(){
+// //   news = new News();
+// //   news.getStory();
+// //   assert.isTrue(news.story.length === 1)
+// // }
+// //
+// // testThatNewsShowsContent();
