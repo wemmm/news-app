@@ -1,6 +1,6 @@
 function testThatNewsHasArray(){
   news = new News();
-  assert.isTrue(news.story === [])
+  assert.isTrue(news.story.length === 0)
 }
 
 testThatNewsHasArray();
