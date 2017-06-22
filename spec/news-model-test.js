@@ -8,7 +8,7 @@ testThatNewsHasArray();
 // function testThatNewsShowsContent(){
 //   news = new News();
 //   news.getStory();
-//   assert.isEqual((news.story.length), 1)
+//   assert.isTrue(news.story.length === 1)
 // }
 //
 // testThatNewsShowsContent();
