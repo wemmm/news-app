@@ -1,7 +1,14 @@
-function testThatNewsShowsContent(){
+function testThatNewsHasArray(){
   news = new News();
-  news.getStory();
-  assert.isFalse(news.story.length === 0)
+  assert.isTrue(news.story === [])
 }
 
-testThatNewsShowsContent();
+testThatNewsHasArray();
+
+// function testThatNewsShowsContent(){
+//   news = new News();
+//   news.getStory();
+//   assert.isEqual((news.story.length), 1)
+// }
+//
+// testThatNewsShowsContent();
