@@ -2,23 +2,23 @@
 
   function NewsList(){
     this.newsArray = [];
-    this.story = []
-    this.articleURL = "http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/politics";
+    this.stories = []
+    this.sectionURL = "http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/politics";
   }
 
 NewsList.prototype.addNews = function (webtitle, content) {
   this.newsArray.push(new News(webtitle, content));
 };
 
- NewsList.prototype.getStory = function () {
+ NewsList.prototype.getstories = function () {
     var request =  new XMLHttpRequest();
-    request.open('GET', this.articleURL, true);
-    var story = this.story
+    request.open('GET', this.sectionURL, true);
+    var stories = this.stories
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
-        story.push(data.response.results);
-        story = this.story
+        stories.push(data.response.results);
+        stories = this.stories
       } else {
         console.log("MASSIVE ERROR")
       }
