@@ -1,11 +1,11 @@
 (function(exports) {
 
-  function News(webtitle, content) {
+  function Article(webtitle, content) {
 
     this.webTitle = webtitle;
     this.content = content;
   }
 
-exports.News = News;
+exports.Article = Article;
 
 })(this);
